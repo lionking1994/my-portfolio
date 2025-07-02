@@ -4,9 +4,9 @@ import { Download, ArrowLeft, FileText } from "lucide-react"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Resume - Alex Chen | AI/ML Engineer",
+  title: "Resume - Daniel Cole | AI/ML Engineer",
   description:
-    "Download the professional resume of Alex Chen, AI/ML Engineer specializing in Computer Vision and Deep Learning.",
+    "Download the professional resume of Daniel Cole, AI/ML Engineer specializing in Computer Vision and Deep Learning.",
 }
 
 export default function ResumePage() {
@@ -24,7 +24,7 @@ export default function ResumePage() {
             </Button>
             <div>
               <h1 className="text-3xl font-bold">Professional Resume</h1>
-              <p className="text-muted-foreground">Alex Chen - AI/ML Engineer</p>
+              <p className="text-muted-foreground">Daniel Cole - AI/ML Engineer</p>
             </div>
           </div>
 
@@ -43,13 +43,13 @@ export default function ResumePage() {
             <CardContent className="text-center space-y-6">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <a href="/resume/Alex_Chen_Resume.pdf" download="Alex_Chen_Resume.pdf">
+                  <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
                     <Download className="mr-2 h-5 w-5" />
                     Download PDF Resume
                   </a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="/resume/Alex_Chen_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a href="/resume/Daniel_Cole_Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 h-5 w-5" />
                     View in Browser
                   </a>

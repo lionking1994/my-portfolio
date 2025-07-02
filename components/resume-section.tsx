@@ -19,7 +19,7 @@ export function ResumeSection() {
           <CardContent className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button size="lg" asChild>
-                <a href="/resume/Alex_Chen_Resume.pdf" download="Alex_Chen_Resume.pdf">
+                <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
                   <Download className="mr-2 h-4 w-4" />
                   Download PDF
                 </a>
@@ -29,7 +29,7 @@ export function ResumeSection() {
                 className="bg-gray-900 text-white hover:bg-gray-800 border-none dark:bg-gray-100 dark:text-black dark:hover:bg-gray-200"
                 asChild
               >
-                <a href="/resume/Alex_Chen_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/resume/Daniel_Cole_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Eye className="mr-2 h-4 w-4" />
                   Preview Online
                 </a>

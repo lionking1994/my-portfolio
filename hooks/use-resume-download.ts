@@ -12,7 +12,7 @@ export function useResumeDownload() {
       // You can add actual analytics tracking here
       // gtag('event', 'download', {
       //   event_category: 'Resume',
-      //   event_label: 'Alex_Chen_Resume.pdf'
+      //   event_label: 'Daniel_Cole_Resume.pdf'
       // })
     }
   }, [])
@@ -22,8 +22,8 @@ export function useResumeDownload() {
 
     // Create download link
     const link = document.createElement("a")
-    link.href = "/resume/Alex_Chen_Resume.pdf"
-    link.download = "Alex_Chen_Resume.pdf"
+    link.href = "/resume/Daniel_Cole_Resume.pdf"
+    link.download = "Daniel_Cole_Resume.pdf"
     link.target = "_blank"
     document.body.appendChild(link)
     link.click()

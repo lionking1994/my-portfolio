@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Alex Chen - AI/ML Engineer",
-    template: "%s | Alex Chen",
+    default: "Daniel Cole - AI/ML Engineer",
+    template: "%s | Daniel Cole",
   },
   description:
-    "Portfolio of Alex Chen, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning. 6+ years of experience building intelligent systems.",
+    "Portfolio of Daniel Cole, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning. 6+ years of experience building intelligent systems.",
   keywords: [
     "AI Engineer",
     "Machine Learning",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "TensorFlow",
     "PyTorch",
   ],
-  authors: [{ name: "Alex Chen" }],
-  creator: "Alex Chen",
-  publisher: "Alex Chen",
+  authors: [{ name: "Daniel Cole" }],
+  creator: "Daniel Cole",
+  publisher: "Daniel Cole",
   robots: {
     index: true,
     follow: true,
@@ -44,16 +44,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://alexchen.dev",
-    title: "Alex Chen - AI/ML Engineer",
-    description: "Portfolio of Alex Chen, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning.",
-    siteName: "Alex Chen Portfolio",
+    url: "https://danielcole.dev",
+    title: "Daniel Cole - AI/ML Engineer",
+    description: "Portfolio of Daniel Cole, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning.",
+    siteName: "Daniel Cole Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alex Chen - AI/ML Engineer",
-    description: "Portfolio of Alex Chen, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning.",
-    creator: "@alexchen",
+    title: "Daniel Cole - AI/ML Engineer",
+    description: "Portfolio of Daniel Cole, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning.",
+    creator: "@danielcole",
   },
   verification: {
     google: "your-google-verification-code",

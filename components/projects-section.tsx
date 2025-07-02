@@ -27,7 +27,7 @@ const projects: Project[] = [
     longDescription:
       "Built a comprehensive computer vision platform that processes over 10M images daily. Features include real-time object detection, facial recognition, and anomaly detection using custom YOLO models and transformer architectures.",
     technologies: ["PyTorch", "FastAPI", "React", "Docker", "AWS", "Redis", "PostgreSQL"],
-    github: "https://github.com/alexchen/ai-vision-platform",
+    github: "https://github.com/lionking1994/ai-vision-platform",
     demo: "https://vision-demo.alexchen.dev",
     stats: { stars: 1248, forks: 234 },
     featured: true,
@@ -39,7 +39,7 @@ const projects: Project[] = [
     longDescription:
       "Developed an end-to-end document processing solution that combines OCR, NLP, and custom transformer models to extract and structure information from various document types with 95% accuracy.",
     technologies: ["Transformers", "spaCy", "Tesseract", "Python", "MongoDB", "Kubernetes"],
-    github: "https://github.com/alexchen/nlp-document-processor",
+    github: "https://github.com/lionking1994/nlp-document-processor",
     demo: "https://docs-demo.alexchen.dev",
     stats: { stars: 892, forks: 156 },
     featured: true,
@@ -52,7 +52,7 @@ const projects: Project[] = [
     longDescription:
       "Created a comprehensive MLOps platform that automates the entire ML lifecycle from data preprocessing to model deployment and monitoring. Includes A/B testing, model versioning, and performance tracking.",
     technologies: ["MLflow", "Kubeflow", "Apache Airflow", "Python", "Docker", "Grafana"],
-    github: "https://github.com/alexchen/mlops-pipeline",
+    github: "https://github.com/lionking1994/mlops-pipeline",
     demo: "https://mlops-demo.alexchen.dev",
     stats: { stars: 567, forks: 89 },
     featured: true,
@@ -65,7 +65,7 @@ const projects: Project[] = [
     longDescription:
       "Built an interactive web application that allows users to generate and edit artwork using state-of-the-art generative AI models including Stable Diffusion and custom GAN architectures.",
     technologies: ["Stable Diffusion", "PyTorch", "React", "WebGL", "Node.js"],
-    github: "https://github.com/alexchen/ai-art-studio",
+    github: "https://github.com/lionking1994/ai-art-studio",
     demo: "https://art-studio.alexchen.dev",
     stats: { stars: 1456, forks: 298 },
     featured: false,
@@ -77,7 +77,7 @@ const projects: Project[] = [
     longDescription:
       "Developed a scalable recommendation engine that combines collaborative filtering, content-based filtering, and deep learning models to provide personalized recommendations with sub-100ms response times.",
     technologies: ["TensorFlow", "Apache Spark", "Elasticsearch", "Python", "Kafka"],
-    github: "https://github.com/alexchen/recommendation-engine",
+    github: "https://github.com/lionking1994/recommendation-engine",
     demo: "https://rec-demo.alexchen.dev",
     stats: { stars: 723, forks: 134 },
     featured: false,
@@ -89,7 +89,7 @@ const projects: Project[] = [
     longDescription:
       "Created a comprehensive framework for building conversational AI applications with built-in NLU, dialog management, and integration capabilities for various messaging platforms.",
     technologies: ["BERT", "Rasa", "FastAPI", "React", "WebSocket", "Docker"],
-    github: "https://github.com/alexchen/ai-chatbot-framework",
+    github: "https://github.com/lionking1994/ai-chatbot-framework",
     demo: "https://chatbot-demo.alexchen.dev",
     stats: { stars: 945, forks: 187 },
     featured: false,

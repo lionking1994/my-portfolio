@@ -13,7 +13,7 @@ export function HeroSection() {
           <div className="flex-1 text-center lg:text-left">
             <div className="mb-8">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
-                <span className="text-primary">Alex</span> <span className="text-foreground">Chen</span>
+                <span className="text-primary">Daniel</span> <span className="text-foreground">Cole</span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground mb-6">
                 AI/ML Engineer | Computer Vision Specialist | Deep Learning Expert
@@ -32,18 +32,18 @@ export function HeroSection() {
                 </Link>
               </Button>
               <div className="flex items-center gap-4">
-                <Button variant="outline" size="icon" asChild>
+                <Button variant="outline" size="icon" asChild className="border-gray-500 text-gray-800 dark:border-gray-300 dark:text-gray-100 bg-white dark:bg-input/30 hover:bg-gray-100 dark:hover:bg-input/50">
                   <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <Github className="h-4 w-4" />
                   </a>
                 </Button>
-                <Button variant="outline" size="icon" asChild>
+                <Button variant="outline" size="icon" asChild className="border-gray-500 text-gray-800 dark:border-gray-300 dark:text-gray-100 bg-white dark:bg-input/30 hover:bg-gray-100 dark:hover:bg-input/50">
                   <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <Linkedin className="h-4 w-4" />
                   </a>
                 </Button>
-                <Button variant="outline" size="icon" asChild>
-                  <a href="mailto:alex.chen.ai@email.com" aria-label="Email">
+                <Button variant="outline" size="icon" asChild className="border-gray-500 text-gray-800 dark:border-gray-300 dark:text-gray-100 bg-white dark:bg-input/30 hover:bg-gray-100 dark:hover:bg-input/50">
+                  <a href="mailto:danielc19940105@gmail.com" aria-label="Email">
                     <Mail className="h-4 w-4" />
                   </a>
                 </Button>

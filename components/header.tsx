@@ -23,7 +23,7 @@ export function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="text-2xl font-bold text-primary transition-colors">
-            Alex Chen
+            Daniel Cole
           </Link>
 
           {/* Desktop Navigation */}
@@ -38,7 +38,7 @@ export function Header() {
               </Link>
             ))}
             <Button variant="outline" size="sm" asChild className="transition-colors bg-transparent">
-              <a href="/resume/Alex_Chen_Resume.pdf" download="Alex_Chen_Resume.pdf">
+              <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
                 <Download className="mr-2 h-3 w-3" />
                 Resume
               </a>
@@ -70,7 +70,7 @@ export function Header() {
                 </Link>
               ))}
               <Button variant="outline" size="sm" className="self-start bg-transparent transition-colors" asChild>
-                <a href="/resume/Alex_Chen_Resume.pdf" download="Alex_Chen_Resume.pdf">
+                <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
                   <Download className="mr-2 h-3 w-3" />
                   Download Resume
                 </a>

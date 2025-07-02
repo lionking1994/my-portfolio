@@ -1,14 +1,14 @@
 export const SITE_CONFIG = {
-  name: "Alex Chen",
+  name: "Daniel Cole",
   title: "AI/ML Engineer",
-  description: "Portfolio of Alex Chen, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning",
-  url: "https://alexchen.dev",
+  description: "Portfolio of Daniel Cole, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning",
+  url: "https://danielcole.dev",
   author: {
-    name: "Alex Chen",
-    email: "alex.chen.ai@email.com",
-    github: "https://github.com/alexchen",
-    linkedin: "https://linkedin.com/in/alexchen",
-    twitter: "https://twitter.com/alexchen",
+    name: "Daniel Cole",
+    email: "daniel.cole.ai@email.com",
+    github: "https://github.com/danielcole",
+    linkedin: "https://linkedin.com/in/danielcole",
+    twitter: "https://twitter.com/danielcole",
   },
   experience: {
     years: 6,

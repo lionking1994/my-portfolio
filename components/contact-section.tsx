@@ -81,7 +81,7 @@ export function ContactSection() {
                     className="flex-1 bg-primary text-white hover:bg-primary/90 border-none"
                     asChild
                   >
-                    <a href="/resume/Alex_Chen_Resume.pdf" download="Alex_Chen_Resume.pdf">
+                    <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
                       <Download className="mr-2 h-4 w-4" />
                       Download Resume
                     </a>
@@ -91,7 +91,7 @@ export function ContactSection() {
                     className="flex-1 bg-gray-900 text-white hover:bg-gray-800 border-none dark:bg-gray-100 dark:text-black dark:hover:bg-gray-200"
                     asChild
                   >
-                    <a href="mailto:alex.chen.ai@email.com">
+                    <a href="mailto:danielc19940105@gmail.com">
                       <Mail className="mr-2 h-4 w-4" />
                       Send Email
                     </a>
