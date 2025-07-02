@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send, Download } from "lucide-react"
+import { Mail, Phone, MapPin, Send } from "lucide-react"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -37,12 +37,12 @@ export function ContactSection() {
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          <Card className="bg-card border-gray-400 dark:border-gray-700 shadow-sm">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          <Card className="bg-card border-gray-400 dark:border-gray-700 shadow-sm flex flex-col h-full">
             <CardHeader>
               <CardTitle className="text-primary">Let's Connect</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-6 flex-1">
               <p className="text-muted-foreground">
                 I'm always open to discussing new opportunities, innovative projects, or potential collaborations in
                 AI/ML. Feel free to reach out!
@@ -51,11 +51,15 @@ export function ContactSection() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span className="text-card-foreground">danielc19940105@email.com</span>
+                  <a href="mailto:danielc19940105@email.com" className="text-card-foreground hover:underline focus:underline outline-none">
+                    danielc19940105@email.com
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary" />
-                  <span className="text-card-foreground">+1 (555) 123-4567</span>
+                  <a href="tel:+15551234567" className="text-card-foreground hover:underline focus:underline outline-none">
+                    +1 (555) 123-4567
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary" />
@@ -73,44 +77,30 @@ export function ContactSection() {
                   <li>• Mentoring & Education</li>
                 </ul>
               </div>
-              <div className="pt-6">
-                <h3 className="font-semibold mb-4 text-card-foreground">Quick Actions</h3>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button
-                    variant="default"
-                    className="flex-1 bg-primary text-white hover:bg-primary/90 border-none"
-                    asChild
-                  >
-                    <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
-                      <Download className="mr-2 h-4 w-4" />
-                      Download Resume
-                    </a>
-                  </Button>
-                  <Button
-                    variant="secondary"
-                    className="flex-1 bg-gray-900 text-white hover:bg-gray-800 border-none dark:bg-gray-100 dark:text-black dark:hover:bg-gray-200"
-                    asChild
-                  >
-                    <a href="mailto:danielc19940105@gmail.com">
-                      <Mail className="mr-2 h-4 w-4" />
-                      Send Email
-                    </a>
-                  </Button>
-                </div>
-              </div>
             </CardContent>
+            <div className="flex w-full px-6 pb-1 mt-auto">
+              <Button
+                variant="default"
+                className="w-full bg-primary text-white hover:bg-primary/90 border-none"
+                asChild
+              >
+                <a href="mailto:danielc19940105@gmail.com">
+                  <Mail className="mr-2 h-4 w-4" />
+                  Send Email
+                </a>
+              </Button>
+            </div>
           </Card>
 
-          <Card className="bg-card border-gray-400 dark:border-gray-700 shadow-sm">
+          <Card className="bg-card border-gray-400 dark:border-gray-700 shadow-sm flex flex-col h-full">
             <CardHeader>
               <CardTitle className="text-primary">Send a Message</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="space-y-6 flex-1">
               <p className="text-muted-foreground">
                 Have a specific question or project in mind? Send me a message and I'll get back to you as soon as
                 possible.
               </p>
-
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-card-foreground">
@@ -126,7 +116,6 @@ export function ContactSection() {
                     className="bg-muted/50 border-2 border-gray-300 dark:border-gray-600 text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </div>
-
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium mb-2 text-card-foreground">
                     Email
@@ -142,7 +131,6 @@ export function ContactSection() {
                     className="bg-muted/50 border-2 border-gray-300 dark:border-gray-600 text-foreground placeholder:text-muted-foreground focus:border-primary"
                   />
                 </div>
-
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2 text-card-foreground">
                     Message
@@ -158,18 +146,20 @@ export function ContactSection() {
                     className="bg-muted/50 border-2 border-gray-300 dark:border-gray-600 text-foreground placeholder:text-muted-foreground resize-none focus:border-primary min-h-[200px]"
                   />
                 </div>
-
-                <Button
-                  type="submit"
-                  onClick={handleSubmit}
-                  className="w-full bg-primary text-white hover:bg-primary/90 border-none"
-                  variant="default"
-                >
-                  <Send className="w-4 h-4 mr-2" />
-                  Send Message
-                </Button>
               </form>
             </CardContent>
+            <div className="flex w-full px-6 pb-1 mt-auto">
+              <Button
+                type="submit"
+                form="contact-form"
+                className="w-full bg-primary text-white hover:bg-primary/90 border-none"
+                variant="default"
+                onClick={handleSubmit}
+              >
+                <Send className="w-4 h-4 mr-2" />
+                Send Message
+              </Button>
+            </div>
           </Card>
         </div>
       </div>
