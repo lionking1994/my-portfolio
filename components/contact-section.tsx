@@ -37,12 +37,12 @@ export function ContactSection() {
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-end">
-          <Card className="bg-card border-border card-enhanced-border shadow-sm flex flex-col h-full">
+        <div className="grid lg:grid-cols-2 gap-12">
+          <Card className="bg-card border-gray-400 dark:border-gray-700 shadow-sm">
             <CardHeader>
               <CardTitle className="text-primary">Let's Connect</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6 flex flex-col flex-1">
+            <CardContent className="space-y-6">
               <p className="text-muted-foreground">
                 I'm always open to discussing new opportunities, innovative projects, or potential collaborations in
                 AI/ML. Feel free to reach out!
@@ -73,16 +73,24 @@ export function ContactSection() {
                   <li>• Mentoring & Education</li>
                 </ul>
               </div>
-              <div className="pt-6 border-t border-border mt-auto">
+              <div className="pt-6">
                 <h3 className="font-semibold mb-4 text-card-foreground">Quick Actions</h3>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button variant="outline" className="flex-1 bg-transparent" asChild>
+                  <Button
+                    variant="default"
+                    className="flex-1 bg-primary text-white hover:bg-primary/90 border-none"
+                    asChild
+                  >
                     <a href="/resume/Alex_Chen_Resume.pdf" download="Alex_Chen_Resume.pdf">
                       <Download className="mr-2 h-4 w-4" />
                       Download Resume
                     </a>
                   </Button>
-                  <Button variant="outline" className="flex-1 bg-transparent" asChild>
+                  <Button
+                    variant="secondary"
+                    className="flex-1 bg-gray-900 text-white hover:bg-gray-800 border-none dark:bg-gray-100 dark:text-black dark:hover:bg-gray-200"
+                    asChild
+                  >
                     <a href="mailto:alex.chen.ai@email.com">
                       <Mail className="mr-2 h-4 w-4" />
                       Send Email
@@ -93,17 +101,17 @@ export function ContactSection() {
             </CardContent>
           </Card>
 
-          <Card className="bg-card border-border card-enhanced-border shadow-sm flex flex-col h-full">
+          <Card className="bg-card border-gray-400 dark:border-gray-700 shadow-sm">
             <CardHeader>
               <CardTitle className="text-primary">Send a Message</CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6 flex flex-col flex-1">
+            <CardContent className="space-y-6">
               <p className="text-muted-foreground">
                 Have a specific question or project in mind? Send me a message and I'll get back to you as soon as
                 possible.
               </p>
 
-              <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-2 text-card-foreground">
                     Name
@@ -145,19 +153,22 @@ export function ContactSection() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Your message here..."
-                    rows={6}
+                    rows={8}
                     required
                     className="bg-muted/50 border-2 border-gray-300 dark:border-gray-600 text-foreground placeholder:text-muted-foreground resize-none focus:border-primary min-h-[200px]"
                   />
                 </div>
-              </form>
 
-              <div className="pt-6 border-t border-border">
-                <Button type="submit" className="w-full" onClick={handleSubmit}>
+                <Button
+                  type="submit"
+                  onClick={handleSubmit}
+                  className="w-full bg-primary text-white hover:bg-primary/90 border-none"
+                  variant="default"
+                >
                   <Send className="w-4 h-4 mr-2" />
                   Send Message
                 </Button>
-              </div>
+              </form>
             </CardContent>
           </Card>
         </div>

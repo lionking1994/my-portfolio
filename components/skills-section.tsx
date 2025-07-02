@@ -51,7 +51,7 @@ export function SkillsSection() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          <Card className="bg-card border-border card-enhanced-border shadow-sm">
+          <Card className="bg-card border-gray-500 dark:border-gray-700 shadow-sm">
             <CardHeader>
               <CardTitle className="text-primary">Technical Skills</CardTitle>
             </CardHeader>
@@ -68,14 +68,18 @@ export function SkillsSection() {
             </CardContent>
           </Card>
 
-          <Card className="bg-card border-border card-enhanced-border shadow-sm">
+          <Card className="bg-card border-gray-500 dark:border-gray-700 shadow-sm">
             <CardHeader>
               <CardTitle className="text-primary">Domain Expertise</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {domains.map((domain, index) => (
-                  <Badge key={index} variant="secondary" className="text-sm">
+                  <Badge
+                    key={index}
+                    variant="secondary"
+                    className="text-sm bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-400 dark:border-gray-600"
+                  >
                     {domain}
                   </Badge>
                 ))}
@@ -84,14 +88,18 @@ export function SkillsSection() {
           </Card>
         </div>
 
-        <Card className="bg-card border-border card-enhanced-border shadow-sm">
+        <Card className="bg-card border-gray-400 dark:border-gray-700 shadow-sm">
           <CardHeader>
             <CardTitle className="text-primary">Tools & Technologies</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-wrap gap-2">
               {tools.map((tool, index) => (
-                <Badge key={index} variant="outline" className="text-sm">
+                <Badge
+                  key={index}
+                  variant="outline"
+                  className="text-sm border-gray-500 dark:border-gray-500 text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800"
+                >
                   {tool}
                 </Badge>
               ))}

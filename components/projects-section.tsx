@@ -145,18 +145,30 @@ export function ProjectsSection() {
                 <p className="text-muted-foreground mb-4 line-clamp-3 flex-shrink-0">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0">
                   {project.technologies.slice(0, 4).map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="text-xs">
+                    <Badge
+                      key={techIndex}
+                      variant="secondary"
+                      className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-600"
+                    >
                       {tech}
                     </Badge>
                   ))}
                   {project.technologies.length > 4 && (
-                    <Badge variant="outline" className="text-xs">
+                    <Badge
+                      variant="outline"
+                      className="text-xs border-gray-400 dark:border-gray-500 text-gray-700 dark:text-gray-300"
+                    >
                       +{project.technologies.length - 4} more
                     </Badge>
                   )}
                 </div>
                 <div className="flex gap-2 mt-auto">
-                  <Button variant="outline" size="sm" asChild className="flex-1 bg-transparent">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="flex-1 border-gray-800 dark:border-white text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-black bg-transparent"
+                  >
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="w-4 h-4 mr-2" />
                       Code
@@ -208,18 +220,30 @@ export function ProjectsSection() {
                 <p className="text-muted-foreground text-sm mb-3 line-clamp-2 flex-shrink-0">{project.description}</p>
                 <div className="flex flex-wrap gap-1 mb-3 flex-shrink-0">
                   {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="text-xs">
+                    <Badge
+                      key={techIndex}
+                      variant="secondary"
+                      className="text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-600"
+                    >
                       {tech}
                     </Badge>
                   ))}
                   {project.technologies.length > 3 && (
-                    <Badge variant="outline" className="text-xs">
+                    <Badge
+                      variant="outline"
+                      className="text-xs border-gray-400 dark:border-gray-500 text-gray-700 dark:text-gray-300"
+                    >
                       +{project.technologies.length - 3}
                     </Badge>
                   )}
                 </div>
                 <div className="flex gap-2 mt-auto">
-                  <Button variant="outline" size="sm" asChild className="flex-1 bg-transparent">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="flex-1 border-gray-800 dark:border-white text-gray-800 dark:text-white hover:bg-gray-800 hover:text-white dark:hover:bg-white dark:hover:text-black bg-transparent"
+                  >
                     <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="w-3 h-3 mr-1" />
                       Code

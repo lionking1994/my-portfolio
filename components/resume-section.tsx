@@ -6,7 +6,7 @@ export function ResumeSection() {
   return (
     <section className="py-12 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <Card className="max-w-2xl mx-auto text-center">
+        <Card className="max-w-2xl mx-auto text-center border-gray-400 dark:border-gray-700 shadow-sm">
           <CardHeader>
             <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
               <FileText className="w-8 h-8 text-primary" />
@@ -26,8 +26,8 @@ export function ResumeSection() {
               </Button>
               <Button
                 size="lg"
+                className="bg-gray-900 text-white hover:bg-gray-800 border-none dark:bg-gray-100 dark:text-black dark:hover:bg-gray-200"
                 asChild
-                className="bg-slate-950 text-white hover:bg-slate-900"
               >
                 <a href="/resume/Alex_Chen_Resume.pdf" target="_blank" rel="noopener noreferrer">
                   <Eye className="mr-2 h-4 w-4" />
