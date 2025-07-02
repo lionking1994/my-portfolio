@@ -25,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: daniel0105/portfolio
+          images: daniel0105/portfolio:latest
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v3
