@@ -10,7 +10,7 @@ export function StructuredData() {
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
     email: SITE_CONFIG.author.email,
-    sameAs: [SITE_CONFIG.author.github, SITE_CONFIG.author.linkedin, SITE_CONFIG.author.twitter],
+    sameAs: [SITE_CONFIG.author.github, SITE_CONFIG.author.linkedin],
     worksFor: {
       "@type": "Organization",
       name: "TechVision AI",

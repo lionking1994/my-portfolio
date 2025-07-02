@@ -16,6 +16,7 @@ interface Project {
     forks: number
   }
   featured: boolean
+  image: string
 }
 
 const projects: Project[] = [
@@ -27,10 +28,11 @@ const projects: Project[] = [
     longDescription:
       "Built a comprehensive computer vision platform that processes over 10M images daily. Features include real-time object detection, facial recognition, and anomaly detection using custom YOLO models and transformer architectures.",
     technologies: ["PyTorch", "FastAPI", "React", "Docker", "AWS", "Redis", "PostgreSQL"],
-    github: "https://github.com/lionking1994/ai-vision-platform",
-    demo: "https://vision-demo.alexchen.dev",
+    github: "https://github.com/lionking1994/OSSDC-VisionAI-Core",
+    demo: "https://vision-demo.danielcole.dev",
     stats: { stars: 1248, forks: 234 },
     featured: true,
+    image: "/images/computer-vision.jpg",
   },
   {
     id: "nlp-document-processor",
@@ -39,10 +41,11 @@ const projects: Project[] = [
     longDescription:
       "Developed an end-to-end document processing solution that combines OCR, NLP, and custom transformer models to extract and structure information from various document types with 95% accuracy.",
     technologies: ["Transformers", "spaCy", "Tesseract", "Python", "MongoDB", "Kubernetes"],
-    github: "https://github.com/lionking1994/nlp-document-processor",
-    demo: "https://docs-demo.alexchen.dev",
+    github: "https://github.com/lionking1994/document-processing-with-ai",
+    demo: "https://docs-demo.danielcole.dev",
     stats: { stars: 892, forks: 156 },
     featured: true,
+    image: "/images/document-process-with-ai.png",
   },
   {
     id: "ml-ops-pipeline",
@@ -52,10 +55,11 @@ const projects: Project[] = [
     longDescription:
       "Created a comprehensive MLOps platform that automates the entire ML lifecycle from data preprocessing to model deployment and monitoring. Includes A/B testing, model versioning, and performance tracking.",
     technologies: ["MLflow", "Kubeflow", "Apache Airflow", "Python", "Docker", "Grafana"],
-    github: "https://github.com/lionking1994/mlops-pipeline",
-    demo: "https://mlops-demo.alexchen.dev",
+    github: "https://github.com/lionking1994/MLOps-pipeline",
+    demo: "https://mlops-demo.danielcole.dev",
     stats: { stars: 567, forks: 89 },
     featured: true,
+    image: "/images/mlops.png",
   },
   {
     id: "generative-ai-art",
@@ -65,10 +69,11 @@ const projects: Project[] = [
     longDescription:
       "Built an interactive web application that allows users to generate and edit artwork using state-of-the-art generative AI models including Stable Diffusion and custom GAN architectures.",
     technologies: ["Stable Diffusion", "PyTorch", "React", "WebGL", "Node.js"],
-    github: "https://github.com/lionking1994/ai-art-studio",
-    demo: "https://art-studio.alexchen.dev",
+    github: "https://github.com/lionking1994/CushyStudio",
+    demo: "https://art-studio.danielcole.dev",
     stats: { stars: 1456, forks: 298 },
     featured: false,
+    image: "/images/build-custom-ai-and-generative-ai-solutions.png",
   },
   {
     id: "recommendation-engine",
@@ -77,10 +82,11 @@ const projects: Project[] = [
     longDescription:
       "Developed a scalable recommendation engine that combines collaborative filtering, content-based filtering, and deep learning models to provide personalized recommendations with sub-100ms response times.",
     technologies: ["TensorFlow", "Apache Spark", "Elasticsearch", "Python", "Kafka"],
-    github: "https://github.com/lionking1994/recommendation-engine",
-    demo: "https://rec-demo.alexchen.dev",
+    github: "https://github.com/lionking1994/AI-POWERED-RECOMMENDATION-ENGINE",
+    demo: "https://rec-demo.danielcole.dev",
     stats: { stars: 723, forks: 134 },
     featured: false,
+    image: "/images/recommendation-engine.png",
   },
   {
     id: "ai-chatbot-framework",
@@ -89,10 +95,11 @@ const projects: Project[] = [
     longDescription:
       "Created a comprehensive framework for building conversational AI applications with built-in NLU, dialog management, and integration capabilities for various messaging platforms.",
     technologies: ["BERT", "Rasa", "FastAPI", "React", "WebSocket", "Docker"],
-    github: "https://github.com/lionking1994/ai-chatbot-framework",
-    demo: "https://chatbot-demo.alexchen.dev",
+    github: "https://github.com/lionking1994/RealtimeVoiceChat",
+    demo: "https://chatbot-demo.danielcole.dev",
     stats: { stars: 945, forks: 187 },
     featured: false,
+    image: "/images/conversational-ai.jpg",
   },
 ]
 
@@ -118,8 +125,8 @@ export function ProjectsSection() {
               key={project.id}
               className="overflow-hidden hover:shadow-lg transition-all duration-300 bg-card border-border card-enhanced-border group flex flex-col h-full"
             >
-              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center">
-                <div className="text-6xl opacity-20">🤖</div>
+              <div className="relative h-48 overflow-hidden flex items-center justify-center bg-white dark:bg-background">
+                <img src={project.image} alt={project.title} className="object-cover w-full h-full" />
                 <div className="absolute top-2 right-2">
                   <Badge variant="secondary" className="bg-primary/90 text-primary-foreground">
                     Featured
@@ -198,8 +205,8 @@ export function ProjectsSection() {
               key={project.id}
               className="overflow-hidden hover:shadow-md transition-all duration-300 bg-card border-border card-enhanced-border group flex flex-col h-full"
             >
-              <div className="relative h-40 overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center">
-                <div className="text-4xl opacity-20">⚡</div>
+              <div className="relative h-40 overflow-hidden flex items-center justify-center bg-white dark:bg-background">
+                <img src={project.image} alt={project.title} className="object-cover w-full h-full" />
               </div>
               <CardHeader className="pb-3 flex-shrink-0">
                 <CardTitle className="text-lg text-card-foreground group-hover:text-primary transition-colors">

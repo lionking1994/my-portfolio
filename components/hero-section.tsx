@@ -33,12 +33,12 @@ export function HeroSection() {
               </Button>
               <div className="flex items-center gap-4">
                 <Button variant="outline" size="icon" asChild className="border-gray-500 text-gray-800 dark:border-gray-300 dark:text-gray-100 bg-white dark:bg-input/30 hover:bg-gray-100 dark:hover:bg-input/50">
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <a href="https://github.com/lionking1994" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <Github className="h-4 w-4" />
                   </a>
                 </Button>
                 <Button variant="outline" size="icon" asChild className="border-gray-500 text-gray-800 dark:border-gray-300 dark:text-gray-100 bg-white dark:bg-input/30 hover:bg-gray-100 dark:hover:bg-input/50">
-                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/in/danielrchinn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <Linkedin className="h-4 w-4" />
                   </a>
                 </Button>

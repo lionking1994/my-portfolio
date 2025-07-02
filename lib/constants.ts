@@ -7,8 +7,7 @@ export const SITE_CONFIG = {
     name: "Daniel Cole",
     email: "daniel.cole.ai@email.com",
     github: "https://github.com/danielcole",
-    linkedin: "https://linkedin.com/in/danielcole",
-    twitter: "https://twitter.com/danielcole",
+    linkedin: "https://www.linkedin.com/in/danielrchinn",
   },
   experience: {
     years: 6,

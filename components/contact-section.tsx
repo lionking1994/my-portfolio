@@ -51,7 +51,7 @@ export function ContactSection() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span className="text-card-foreground">alex.chen.ai@email.com</span>
+                  <span className="text-card-foreground">danielc19940105@email.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-primary" />

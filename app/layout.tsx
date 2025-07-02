@@ -49,12 +49,6 @@ export const metadata: Metadata = {
     description: "Portfolio of Daniel Cole, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning.",
     siteName: "Daniel Cole Portfolio",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Daniel Cole - AI/ML Engineer",
-    description: "Portfolio of Daniel Cole, AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning.",
-    creator: "@danielcole",
-  },
   verification: {
     google: "your-google-verification-code",
   },
