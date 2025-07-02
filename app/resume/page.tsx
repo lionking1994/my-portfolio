@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Download, ArrowLeft, FileText } from "lucide-react"
 import Link from "next/link"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export const metadata = {
   title: "Resume - Daniel Cole | AI/ML Engineer",
@@ -12,17 +13,23 @@ export const metadata = {
 export default function ResumePage() {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+        {/* Theme Toggle Button */}
+        <div className="absolute right-4 top-4 z-10">
+          <ThemeToggle />
+        </div>
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="flex items-center gap-4 mb-8">
-            <Button variant="outline" size="sm" asChild>
-              <Link href="/">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Portfolio
-              </Link>
-            </Button>
-            <div>
+          <div className="flex flex-col items-center gap-4 mb-8">
+            <div className="self-start">
+              <Button variant="outline" size="sm" asChild>
+                <Link href="/">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Back to Portfolio
+                </Link>
+              </Button>
+            </div>
+            <div className="text-center w-full">
               <h1 className="text-3xl font-bold">Professional Resume</h1>
               <p className="text-muted-foreground">Daniel Cole - AI/ML Engineer</p>
             </div>
@@ -48,7 +55,12 @@ export default function ResumePage() {
                     Download PDF Resume
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-blue-500 dark:border-blue-400 hover:border-blue-700 dark:hover:border-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
+                  asChild
+                >
                   <a href="/resume/Daniel_Cole_Resume.pdf" target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 h-5 w-5" />
                     View in Browser
@@ -64,7 +76,7 @@ export default function ResumePage() {
                 </div>
                 <div>
                   <strong className="text-foreground">Size:</strong>
-                  <br />2 Pages
+                  <br />1 Page
                 </div>
                 <div>
                   <strong className="text-foreground">Updated:</strong>
@@ -147,7 +159,7 @@ export default function ResumePage() {
             <CardContent className="text-center py-8">
               <h3 className="text-xl font-semibold mb-2">Ready to Connect?</h3>
               <p className="text-muted-foreground mb-4">
-                If you'd like to discuss opportunities or learn more about my experience, feel free to reach out.
+                If you&#39;d like to discuss opportunities or learn more about my experience, feel free to reach out.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Button asChild>

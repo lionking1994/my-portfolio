@@ -35,7 +35,11 @@ export function ResumeSection() {
                 </a>
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground">Last updated: December 2024 • PDF Format • 2 pages</p>
+            <Button variant="link" size="lg" asChild>
+              <a href="/resume">
+                See more details
+              </a>
+            </Button>
           </CardContent>
         </Card>
       </div>
