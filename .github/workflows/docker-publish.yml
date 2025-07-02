@@ -25,12 +25,12 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: daniel0105/portfolio:latest
+          images: daniel0105/portfolio
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: daniel0105/portfolio:latest
           labels: ${{ steps.meta.outputs.labels }}
