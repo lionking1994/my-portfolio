@@ -19,10 +19,10 @@ export function Header() {
   ]
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b transition-colors duration-300">
+    <header className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-md border-b-2 border-gray-300 dark:border-gray-700 transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-2xl font-bold text-primary transition-colors">
+          <Link href="/" className="text-2xl sm:text-2xl md:text-2xl font-bold text-primary transition-colors break-words max-w-[160px] sm:max-w-none overflow-hidden whitespace-nowrap text-ellipsis">
             Daniel Cole
           </Link>
 
