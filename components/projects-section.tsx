@@ -83,7 +83,7 @@ const projects: Project[] = [
       "Developed a scalable recommendation engine that combines collaborative filtering, content-based filtering, and deep learning models to provide personalized recommendations with sub-100ms response times.",
     technologies: ["TensorFlow", "Apache Spark", "Elasticsearch", "Python", "Kafka"],
     github: "https://github.com/lionking1994/AI-POWERED-RECOMMENDATION-ENGINE",
-    demo: "https://rec-demo.danielcole.dev",
+    demo: "https://recommendation-demo.danielcole.dev",
     stats: { stars: 723, forks: 134 },
     featured: false,
     image: "/images/recommendation-engine.png",

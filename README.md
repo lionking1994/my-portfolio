@@ -17,7 +17,7 @@ A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 - **Framework**: Next.js 15
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **UI Components**: Radix UI
+- **UI Components**: ShadCN UI
 - **Icons**: Lucide React
 - **Theme**: next-themes
 
