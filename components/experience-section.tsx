@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { AnimatedBackground } from "@/components/animated-background"
 
 export function ExperienceSection() {
   const experiences = [
@@ -45,8 +46,9 @@ export function ExperienceSection() {
   ]
 
   return (
-    <section id="experience" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="relative py-20 bg-[#0a101e] overflow-hidden">
+      <AnimatedBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Work Experience</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>

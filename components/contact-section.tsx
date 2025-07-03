@@ -81,7 +81,7 @@ export function ContactSection() {
             <div className="flex w-full px-6 pb-1 mt-auto">
               <Button
                 variant="default"
-                className="w-full bg-primary text-white hover:bg-primary/90 border-none"
+                className="w-full bg-primary text-black hover:bg-primary/90 border-none"
                 asChild
               >
                 <a href="mailto:danielc19940105@gmail.com">
@@ -152,7 +152,7 @@ export function ContactSection() {
               <Button
                 type="submit"
                 form="contact-form"
-                className="w-full bg-primary text-white hover:bg-primary/90 border-none"
+                className="w-full bg-primary text-black hover:bg-primary/90 border-none"
                 variant="default"
                 onClick={handleSubmit}
               >

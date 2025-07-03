@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
+import { AnimatedBackground } from "@/components/animated-background"
 
 export function SkillsSection() {
   const technicalSkills = [
@@ -43,8 +44,9 @@ export function SkillsSection() {
   ]
 
   return (
-    <section id="skills" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="relative py-20 bg-[#0a101e] overflow-hidden">
+      <AnimatedBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Skills & Expertise</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
