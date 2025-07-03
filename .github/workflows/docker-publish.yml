@@ -32,12 +32,9 @@ jobs:
         with:
           images: ${{ env.IMAGE_NAME }}
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
+            type=raw,value=latest,enable={{is_default_branch}}
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=sha,prefix={{branch}}-
-            type=raw,value=latest,enable={{is_default_branch}}
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
@@ -52,5 +49,4 @@ jobs:
       - name: Trigger Vercel Deployment
         run: |
           echo "Docker image built and pushed successfully"
-          echo "Image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}"
-          echo "Latest: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest"
+          echo "Image: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest"
