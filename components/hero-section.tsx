@@ -15,7 +15,7 @@ export function HeroSection() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
                 <span className="text-primary">Daniel</span> <span className="text-foreground">Cole</span>
               </h1>
-              <p className="text-xl sm:text-2xl text-muted-foreground mb-6 break-words max-w-xs sm:max-w-md md:max-w-lg mx-auto lg:mx-0 whitespace-pre-line">
+              <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-full whitespace-nowrap overflow-x-auto">
                 AI/ML Engineer | Computer Vision Specialist | Deep Learning Expert
               </p>
               <p className="text-lg text-muted-foreground max-w-2xl">
