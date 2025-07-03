@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Github, ExternalLink, Star, GitFork, Mail } from "lucide-react"
+import { AnimatedBackground } from "@/components/animated-background"
 
 interface Project {
   id: string
@@ -108,8 +109,9 @@ export function ProjectsSection() {
   const otherProjects = projects.filter((project) => !project.featured)
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="relative py-20 bg-muted/30 overflow-hidden">
+      <AnimatedBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Featured Projects</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>

@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Download, FileText, Eye } from "lucide-react"
+import { AnimatedBackground } from "@/components/animated-background"
 
 export function ResumeSection() {
   return (
-    <section className="py-12 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-12 bg-muted/30 overflow-hidden">
+      <AnimatedBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <Card className="max-w-2xl mx-auto text-center border-gray-400 dark:border-gray-700 shadow-sm">
           <CardHeader>
             <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">

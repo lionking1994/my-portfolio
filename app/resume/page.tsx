@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Download, ArrowLeft, FileText } from "lucide-react"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { AnimatedBackground } from "@/components/animated-background"
 
 export const metadata = {
   title: "Resume - Daniel Cole | AI/ML Engineer",
@@ -12,8 +13,9 @@ export const metadata = {
 
 export default function ResumePage() {
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative">
+    <div className="relative min-h-screen bg-background overflow-hidden">
+      <AnimatedBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         {/* Theme Toggle Button */}
         <div className="absolute right-4 top-4 z-10">
           <ThemeToggle />

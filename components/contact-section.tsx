@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { AnimatedBackground } from "@/components/animated-background"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -30,8 +31,9 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="relative py-20 bg-muted/30 overflow-hidden">
+      <AnimatedBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-foreground">Contact Me</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
