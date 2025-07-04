@@ -11,7 +11,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Daniel Cole",
   description:
-    "AI/ML Engineer specializing in Computer Vision, NLP, and Deep Learning with 6+ years of experience building intelligent systems.",
+    "AI/ML Engineer specializing in Computer Vision, NLP, LLM, and Deep Learning with 6+ years of experience building intelligent systems.",
 }
 
 export default function HomePage() {
