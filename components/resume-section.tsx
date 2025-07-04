@@ -37,7 +37,7 @@ export function ResumeSection() {
                 </a>
               </Button>
             </div>
-            <Button variant="link" size="lg" asChild>
+            <Button variant="link" size="lg" asChild className="underline">
               <a href="/resume">
                 See more details
               </a>
