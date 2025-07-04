@@ -15,7 +15,7 @@ export function HeroSection() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
                 <a href="https://your-link-here.com" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
                   Daniel
-                </a> <span className="text-foreground">Cole</span>
+                </a>&nbsp;<span className="text-foreground">Cole</span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-xs sm:max-w-full">
                 AI/ML Engineer | Computer Vision Specialist | Deep Learning Expert
