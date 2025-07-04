@@ -6,13 +6,13 @@ export function AboutSection() {
   const education = [
     {
       degree: "Ph.D. in Computer Science",
-      school: "Stanford University",
+      school: "UC Berkeley",
       year: "2018-2022",
       focus: "Machine Learning & Computer Vision",
     },
     {
       degree: "M.S. in Artificial Intelligence",
-      school: "MIT",
+      school: "UC Berkeley",
       year: "2016-2018",
       focus: "Deep Learning & Neural Networks",
     },
