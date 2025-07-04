@@ -33,7 +33,7 @@ A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd nextjs-portfolio
+cd daniel0105/portfolio
 ```
 
 2. Install dependencies:
@@ -104,16 +104,16 @@ Build and run the Docker image:
 
 ```bash
 # Build the image
-docker build -t nextjs-portfolio .
+docker build -t daniel0105/portfolio .
 
 # Run the container
-docker run -p 3000:3000 nextjs-portfolio
+docker run -p 3000:3000 daniel0105/portfolio
 ```
 
 ## Project Structure
 
 ```
-nextjs-portfolio/
+daniel0105/portfolio/
 ├── app/                    # Next.js app directory
 │   ├── layout.tsx         # Root layout
 │   ├── page.tsx           # Home page
