@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     "AI Engineer",
     "Machine Learning",
     "Computer Vision",
+    "Large Language Model",
     "Deep Learning",
     "NLP",
     "Python",
