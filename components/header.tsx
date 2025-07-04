@@ -38,7 +38,7 @@ export function Header() {
               </Link>
             ))}
             <Button variant="outline" size="sm" asChild className="transition-colors bg-transparent">
-              <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
+              <a href="/resume/Daniel_Cole_resume.pdf" download="Daniel_Cole_resume.pdf">
                 <Download className="mr-2 h-3 w-3" />
                 Resume
               </a>
@@ -70,7 +70,7 @@ export function Header() {
                 </Link>
               ))}
               <Button variant="outline" size="sm" className="self-start bg-transparent transition-colors" asChild>
-                <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
+                <a href="/resume/Daniel_Cole_resume.pdf" download="Daniel_Cole_resume.pdf">
                   <Download className="mr-2 h-3 w-3" />
                   Download Resume
                 </a>

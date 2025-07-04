@@ -52,7 +52,7 @@ export default function ResumePage() {
             <CardContent className="text-center space-y-6">
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild>
-                  <a href="/resume/Daniel_Cole_Resume.pdf" download="Daniel_Cole_Resume.pdf">
+                  <a href="/resume/Daniel_Cole_resume.pdf" download="Daniel_Cole_resume.pdf">
                     <Download className="mr-2 h-5 w-5" />
                     Download PDF Resume
                   </a>
@@ -63,7 +63,7 @@ export default function ResumePage() {
                   className="border-2 border-blue-500 dark:border-blue-400 hover:border-blue-700 dark:hover:border-blue-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors"
                   asChild
                 >
-                  <a href="/resume/Daniel_Cole_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <a href="/resume/Daniel_Cole_resume.pdf" target="_blank" rel="noopener noreferrer">
                     <FileText className="mr-2 h-5 w-5" />
                     View in Browser
                   </a>

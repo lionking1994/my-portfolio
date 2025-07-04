@@ -22,8 +22,8 @@ export function useResumeDownload() {
 
     // Create download link
     const link = document.createElement("a")
-    link.href = "/resume/Daniel_Cole_Resume.pdf"
-    link.download = "Daniel_Cole_Resume.pdf"
+    link.href = "/resume/Daniel_Cole_resume.pdf"
+    link.download = "Daniel_Cole_resume.pdf"
     link.target = "_blank"
     document.body.appendChild(link)
     link.click()
