@@ -15,10 +15,10 @@ export function HeroSection() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-foreground">
                 <span className="text-primary">Daniel</span> <span className="text-foreground">Cole</span>
               </h1>
-              <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-full whitespace-nowrap overflow-x-auto">
+              <p className="text-xl sm:text-2xl text-muted-foreground mb-6 max-w-xs sm:max-w-full mx-auto">
                 AI/ML Engineer | Computer Vision Specialist | Deep Learning Expert
               </p>
-              <p className="text-lg text-muted-foreground max-w-2xl">
+              <p className="text-lg text-muted-foreground max-w-xs sm:max-w-2xl mx-auto">
                 Passionate about building intelligent systems that solve real-world problems. Specializing in computer
                 vision, natural language processing, and MLOps with 6+ years of experience.
               </p>
