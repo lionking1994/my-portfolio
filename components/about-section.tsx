@@ -29,16 +29,19 @@ export function AboutSection() {
       name: "TensorFlow Developer Certificate",
       issuer: "Google",
       year: "2023",
+      url: "https://www.tensorflow.org/certificate/daniel-cole",
     },
     {
       name: "AWS Machine Learning Specialty",
       issuer: "Amazon Web Services",
       year: "2023",
+      url: "https://aws.amazon.com/certification/certified-machine-learning-specialty/daniel-cole",
     },
     {
       name: "Deep Learning Specialization",
       issuer: "Coursera (Andrew Ng)",
       year: "2022",
+      url: "https://www.coursera.org/specializations/deep-learning/daniel-cole",
     },
   ]
 
@@ -99,7 +102,15 @@ export function AboutSection() {
               {certifications.map((cert, index) => (
                 <div key={index} className="relative pl-6 border-l-2 border-primary/20">
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-primary rounded-full"></div>
-                  <h3 className="font-semibold text-card-foreground">{cert.name}</h3>
+                  <h3 className="font-semibold text-card-foreground">
+                    {cert.url ? (
+                      <a href={cert.url} target="_blank" rel="noopener noreferrer" className="text-primary underline hover:text-primary/80">
+                        {cert.name}
+                      </a>
+                    ) : (
+                      cert.name
+                    )}
+                  </h3>
                   <p className="text-muted-foreground">{cert.issuer}</p>
                   <p className="text-sm text-primary font-medium">{cert.year}</p>
                 </div>
